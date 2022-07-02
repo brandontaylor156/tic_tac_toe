@@ -1,0 +1,123 @@
+body {
+    background-image: url("https://wallpaperaccess.com/full/99810.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Helvetica";
+    color:#FFCC99;
+    
+}
+
+#mydiv {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#chooseX:hover, #chooseO:hover {
+    color: rgb(228, 23, 23);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#chooseX, #chooseO {
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+#chooseX {
+    margin-left: 4%;
+    position: absolute;
+    z-index: 1;
+}
+
+#chooseO {
+    margin-left: 8%;
+    position: absolute;
+    z-index: 1;
+}
+
+#bigtable {
+    font-variant: small-caps;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 90px;
+    padding-top: 5%;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    table-layout: fixed;
+}
+
+#smalltable {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(#E66465, #9198E5);
+    border-collapse: collapse;
+    width: 300px;
+    border: 0px;
+    table-layout: fixed;
+    cursor: pointer;
+}
+
+#smalltable td:hover
+{
+    background-color: #CCC;
+    animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+    0% {
+      background-color: blue;
+    }
+    10% {
+      background-color: #8e44ad;
+    }
+    20% {
+      background-color: #1abc9c;
+    }
+    30% {
+      background-color: #d35400;
+    }
+    40% {
+      background-color: blue;
+    }
+    50% {
+      background-color: #34495e;
+    }
+    60% {
+      background-color: blue;
+    }
+    70% {
+      background-color: #2980b9;
+    }
+    80% {
+      background-color: #f1c40f;
+    }
+    90% {
+      background-color: #2980b9;
+    }
+    100% {
+      background-color: pink;
+    }
+  }
+
+td:first-child {
+    border-left: 0px solid transparent;
+}
+
+td:last-child {
+    border-right: 0px solid transparent;
+}
+
+tr:first-child {
+    border-top: 0px solid transparent;
+}
+
+tr:last-child {
+    border-bottom: 0px solid transparent;
+}
